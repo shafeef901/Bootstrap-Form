@@ -14,11 +14,106 @@
 <title>Bootstrap Form</title>
 <link rel="shortcut icon" href="img/mypict.ico" type="image/png">
 
+<style>
+#bg-img{
+	background-image:url('img/bg,jpg');
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+
+</style>
+
+<div id="bg-img"></div>
+
 </head>
 
 <body>
 
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="text-center">Bootstrap Form</h1>
+			</div>
+		</div>
 
+		<div class="row">
+			<div class="col-lg-6 col-lg-push-3">
+				<form action="" method="">
+					<div class="form-group">
+						<label for="name">Name</label>
+						<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						<input type="text" class="form-control" id="name" placeholder="Full Name">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="username">Choose your Username</label>
+						<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						<input type="text" class="form-control" id="username" placeholder="username@gmail.com">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="pass">Create a password</label>
+						<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+						<input type="password" class="form-control" id="pass">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="pass2">Confirm your Password</label>
+						<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+						<input type="password" class="form-control" id="pass2">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="bday">Birthday</label>
+						 <div class="input-group">
+  						 <span class="input-group-addon">DOB</span>
+						<input type="text" class="form-control" id="bday" placeholder="DD/MM/YYYY">
+						</div>
+					</div>
+
+					<div class="form-group">
+						
+						<label for="gen">Gender</label><br>
+						<label class="radio-inline">
+						<input type="radio" name="optradio">Male</label>
+						<label class="radio-inline">
+						<input type="radio" name="optradio">Female</label>
+						<label class="radio-inline">
+						<input type="radio" name="optradio">Other</label>
+					</div>
+
+					<div class="form-group">
+						<label for="mob">Mobile Number</label>
+						<input type="text" class="form-control" id="mob">
+					</div>
+
+					<div class="form-group">
+						<label for="add">Address</label>
+						<input type="text" class="form-control" id="add">
+					</div>
+
+					<div class="form-group">
+						<input type="button" value=Submit class="btn btn-default"/>
+						
+					</div>
+
+				</form>
+			<blockquote>
+				<p>Form developed by Shafeef Omar</p>
+				<footer>Cool ain't it!</footer>
+			</blockquote>
+			</div>
+
+		</div>
 <!--Includeing jQuery-->
 <script src="js/jquery.min.js"></script>
 
