@@ -14,22 +14,9 @@
 <title>Bootstrap Form</title>
 <link rel="shortcut icon" href="img/mypict.ico" type="image/png">
 
-<style>
-#bg-img{
-	background-image:url('img/bg,jpg');
-	background-repeat:no-repeat;
-	background-size:contain;
-	background-position:center;
-}
-
-</style>
-
-<div id="bg-img"></div>
-
 </head>
 
 <body>
-
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -39,7 +26,7 @@
 
 		<div class="row">
 			<div class="col-lg-6 col-lg-push-3">
-				<form action="" method="">
+				<form action="" id="contactform" method="post" role="form">
 					<div class="form-group">
 						<label for="name">Name</label>
 						<div class="input-group">
@@ -102,7 +89,7 @@
 					</div>
 
 					<div class="form-group">
-						<input type="button" value=Submit class="btn btn-default"/>
+						<input type="button" value=Submit id="contactbtn" class="btn btn-default"/>
 						
 					</div>
 
@@ -114,13 +101,13 @@
 			</div>
 
 		</div>
-<!--Includeing jQuery-->
+<!--Including jQuery-->
 <script src="js/jquery.min.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<script src='js/main.js'></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
