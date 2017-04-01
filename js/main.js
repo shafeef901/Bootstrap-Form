@@ -37,21 +37,23 @@ $(document).ready(
 							{return false;}
 						if(pass.val()!=pass2.val())
 						{
-							pass_error.innerHTML="Passwords do not match";
 							var div2=$("#pass").closest("div");
 							var div3=$("#pass2").closest("div");
 							div2.addClass("has-error");
 							div3.addClass("has-error");
+							alert('Be Careful! Passwords do not match');
 							return false;
 						}
+						if(!document.vform)
 						if(!validate("bday"))
 							{return false;}
 						if(!validate("mob"))
 							{return false;}
 						if(!validate("add"))
 							{return false;}
-
+						alert('Form Submitted!');
 						$("form#contactform").submit();
+
 
 						}
 						)
