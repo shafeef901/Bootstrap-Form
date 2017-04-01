@@ -1,9 +1,10 @@
-function validateText(id)
+function validate(id)
 	{
 		if($("#"+id).val()==null || $("#"+id).val()=="")
 		{
 			var div= $("#"+id).closest("div");
 			div.addClass("has-error");
+
 			return false;
 		}
 		else
@@ -18,26 +19,42 @@ function validateText(id)
 
 $(document).ready(
 			function()
-			{
+			{		
+					var pass=$("#pass");
+					var pass2=$("#pass2");
+					var pass_error=$("#pass_error");
+
+
 					$('#contactbtn').click(function()
 						{
-						if(!validateText("name"))
+						if(!validate("name"))
 							{return false;}
-						if(!validateText("username"))
+						if(!validate("username"))
 							{return false;}
-						if(!validateText("pass"))
+						if(!validate("pass"))
 							{return false;}
-						if(!validateText("pass2"))
+						if(!validate("pass2"))
 							{return false;}
-						if(!validateText("bday"))
+						if(pass.val()!=pass2.val())
+						{
+							pass_error.innerHTML="Passwords do not match";
+							var div2=$("#pass").closest("div");
+							var div3=$("#pass2").closest("div");
+							div2.addClass("has-error");
+							div3.addClass("has-error");
+							return false;
+						}
+						if(!validate("bday"))
 							{return false;}
-						if(!validateText("mob"))
+						if(!validate("mob"))
 							{return false;}
-						if(!validateText("add"))
+						if(!validate("add"))
 							{return false;}
 
 						$("form#contactform").submit();
 
-						})
+						}
+						)
+
 			}
 		)
